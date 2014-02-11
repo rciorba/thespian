@@ -20,5 +20,5 @@ setup(
     author="Radu Ciorba",
     author_email="radu.ciorba@3pillarglobal.com",
     description="Multiprocessing based Actor Model",
-    url="http://github.com/rciorba/thespian",
+    url="http://github.com/pbs/thespian",
 )
