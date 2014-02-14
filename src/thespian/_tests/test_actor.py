@@ -32,6 +32,7 @@ class B(LActor):
         if self.count == 0:
             return self.STOP
 
+
 class DeadActor(LActor):
     def __init__(self, other):
         super(DeadActor, self).__init__()
@@ -45,6 +46,7 @@ class DeadActor(LActor):
         if self.count == 0:
             raise RuntimeError("Fatal exception: FOO is BARed")
 
+
 def test_actor():
     a = A(None)
     b = B(a)
@@ -55,6 +57,7 @@ def test_actor():
     a._p.join()
     # if this dind't deadlock, we're happy campers
     # TODO: enhance the assertions
+
 
 def test_dead_actor():
     a = A(None)
