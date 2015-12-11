@@ -7,3 +7,4 @@ install:
   - "python setup.py develop"
 # run tests
 script: py.test
+sudo: false
